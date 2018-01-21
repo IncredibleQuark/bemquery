@@ -1,7 +1,11 @@
 'use strict';
 
-import * as $ from 'bemquery-core';
+// import * as $ from 'bemquery-core';
 import 'bemquery-async-dom';
 import 'bemquery-dom-events';
 
-export default $;
+function helloWorld() {
+	return 'Hello Hell';
+}
+
+export default helloWorld;

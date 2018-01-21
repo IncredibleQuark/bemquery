@@ -8,3 +8,5 @@ coverage/
 dist
 docs/dist
 npm-debug.log
+.idea/
+package-lock.json
