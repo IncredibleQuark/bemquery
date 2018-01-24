@@ -1,4 +1,7 @@
 /* global chai */
+
+'use strict';
+
 import helloWorld from '../src/index';
 
 const expect = chai.expect;
