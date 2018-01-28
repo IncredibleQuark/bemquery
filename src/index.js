@@ -1,11 +1,6 @@
 'use strict';
 
-// import * as $ from 'bemquery-core';
-import 'bemquery-async-dom';
-import 'bemquery-dom-events';
-
-function helloWorld() {
-	return 'Hello Hell';
-}
-
-export default helloWorld;
+export { default as Converter } from './converter/Converter';
+export { default as Selector } from './converter/Selector';
+export { default as SelectorEngine } from './SelectorEngine';
+export { default as default } from './factory';
