@@ -1,6 +1,6 @@
 'use strict';
 
-class SelectorEngine {
+class SelectorEngine{
 	constructor( converter ) {
 		this.converter = converter;
 	}
