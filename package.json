@@ -6,7 +6,7 @@
   "jsnext:main": "dist/bemquery.js",
   "module": "dist/bemquery.js",
   "scripts": {
-    "lint": "eslint -c config/eslint/default.json src/**/*.js tests/**/*.js",
+    "lint": "eslint -c ./config/eslint/default.json src/**/*.js tests/**/*.js",
     "pretest": "npm run lint",
     "test": "karma start config/karma/default.js",
     "coverage": "codecov",

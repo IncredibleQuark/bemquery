@@ -18,7 +18,7 @@ class SelectorEngine {
 	find() {
 		return {
 			selector: SelectorEngine.selector,
-			elements: Array.from( SelectorEngine.elements)
+			elements: Array.from( SelectorEngine.elements )
 		};
 	}
 }
