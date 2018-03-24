@@ -73,6 +73,27 @@ class BEMQuery {
 			}
 		};
 	}
+
+	/**
+	 * Gets element with given index.
+	 *
+	 * @param {Number} index Element's index.
+	 * @return {BEMQuery} New BEMQuery instance with fetched element
+	 * as an only element in the collection.
+	 */
+	get( index ) {
+		index = Number( index );
+
+		if ( Number.isNaN( index ) ) {
+			throw new TypeError( 'Index must be a correct Number.' );
+		} else if ( index < 0 ) {
+			throw new RangeError( 'Index must be greater or equal to 0.' );
+		} else if ( index > ( this.elements.length - 1 ) ) {
+			throw new RangeError( 'Index cannot be greater than collection\'s length.' );
+		}
+
+		return new BEMQuery( this.elements[ index ], document, this.converter, this.selectorEngine );
+	}
 }
 
 export default BEMQuery;
